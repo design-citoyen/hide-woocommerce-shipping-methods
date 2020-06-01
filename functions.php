@@ -19,7 +19,7 @@ function hide_canada_shipping_for_popart_shipping_class ( $rates, $package ) {
       } 
    }
    if ( $in_cart ) {
-      unset( $rates['free_shipping:11'] ); // shipping method with ID (Livraison Canada)
+      unset( $rates['flat_rate:11'] ); // shipping method with ID (Livraison Canada)
    }
    return $rates;
 }
@@ -37,7 +37,7 @@ function hide_usa_shipping_for_popart_shipping_class ( $rates, $package ) {
       } 
    }
    if ( $in_cart ) {
-      unset( $rates['free_shipping:13'] ); // shipping method with ID (Livraison USA)
+      unset( $rates['flat_rate:13'] ); // shipping method with ID (Livraison USA)
    }
    return $rates;
 }
@@ -55,7 +55,7 @@ function hide_world_shipping_for_popart_shipping_class ( $rates, $package ) {
       } 
    }
    if ( $in_cart ) {
-      unset( $rates['free_shipping:14'] ); // shipping method with ID (Livraison International)
+      unset( $rates['flat_rate:14'] ); // shipping method with ID (Livraison International)
    }
    return $rates;
 }
